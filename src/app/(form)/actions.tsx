@@ -30,7 +30,7 @@ async function uploadFileToS3(file: Buffer, fileName: string) {
 
     const params = {
       Bucket: BUCKET,
-      Key: `images/meme_${uuidv4()}.webp`,
+      Key: `images/image_${uuidv4()}.webp`,
       Body: fileBuffer,
       ContentType: "image/webp",
     };
